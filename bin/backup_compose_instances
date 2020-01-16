@@ -1,0 +1,7 @@
+#!/bin/bash
+backup_compose_instances(){(
+    bach backup
+    bach clear_old_backups
+    bach clear_old_database_backups
+)}
+backup_compose_instances $@

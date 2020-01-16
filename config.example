@@ -1,0 +1,5 @@
+DAYS_TO_BACKUP=3
+INSTANCES_FOLDER="/srv/bach"
+BACKUP_FOLDER="/srv/bach_backups"
+PROJECT_TEMPLATES_FOLDER="/etc/bach/project_templates"
+IMAGE_SOURCES_FOLDER="/etc/bach/image_sources"

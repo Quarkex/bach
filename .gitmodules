@@ -1,0 +1,3 @@
+[submodule "lib/clavichord"]
+	path = lib/clavichord
+	url = git@git.atanor.dev:quarkex/clavichord.git
