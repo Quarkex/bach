@@ -31,6 +31,7 @@ destroy(){(
             echo "ERROR: Project $instance_name does not exist.";
             return -1;
         else
+            (cd "$instance_folder"; docker-compose down);
             rm -rf "$instance_folder";
             return $?
         fi
