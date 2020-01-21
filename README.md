@@ -27,10 +27,14 @@ Make this permanent adding the command to your bashrc.
 
 `# echo 'export PATH="$PATH:/usr/local/lib/bach/bin"' >>~/.bashrc`
 
+If you prefer, you may include the path system-wide instead.
+
+`# echo 'export PATH="$PATH:/usr/local/lib/bach/bin"' >>/etc/profile`
+
 You may also run `install_autocompletion.sh` to link bach autocompletion
 scripts:
 
-`# /etc/bach/install_autocompletion.sh`
+`# cd /usr/local/lib/bach && ./install_autocompletion.sh`
 
 Available commands
 ------------------
