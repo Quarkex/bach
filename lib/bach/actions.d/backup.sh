@@ -64,7 +64,7 @@ backup(){(
 
         if [ ! "$project_name" == "" ] && [ ! "$instance_name" == "" ]; then
             echo
-            "$program_name" backup_databases "$project_name" "$instance_name" \
+            "$0" backup_databases "$project_name" "$instance_name" \
                 | sed "s/^/$padding    /g"
         fi
 

@@ -61,7 +61,7 @@ restore(){(
             if [[ $confirmed_action == true ]]; then
 
                 if [ -d "$instance_folder" ]; then
-                    "$program_name" compose \
+                    "$0" compose \
                         "$project_name" "$instance_name" down
 
                     rm -rf "$instance_folder"
