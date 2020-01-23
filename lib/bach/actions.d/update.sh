@@ -1,5 +1,5 @@
 set_action "update" "-i -t"                                                    \
-"Update bach itself, the image sources folder, or the project templates folder"\
+"Update bach itself, the image sources folder, or the project templates folder" \
 "Usage:"                                                                       \
 "  %program_name% %action_name%"                                               \
 ""                                                                             \

@@ -1,5 +1,5 @@
 set_action "clear_old_database_backups" ""                                     \
-"Remove files older than %days_to_backup% days from the database backups folder"\
+"Remove files older than %days_to_backup% days from the database backups folder" \
 "Usage:"                                                                       \
 "  %program_name% %action_name%"                                               \
 ""
