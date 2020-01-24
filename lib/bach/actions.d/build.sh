@@ -41,7 +41,7 @@ build(){(
 
     build_image(){(
         cd "$images_folder/$1"
-        docker build -t "$1" .
+        docker build -t "$1" --no-cache .
     )}
 
     declare -A built_images;
