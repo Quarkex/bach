@@ -19,10 +19,10 @@ install(){(
         cd "$target_folder"
         if [ -d "$target_folder/.git" ]; then
             if [ "$submodule_name" != "" ]; then
-                git submodule add -b "${b:=master}" $git_source_url "$submodule_name"
+                git submodule add --branch "${b:=master}" $git_source_url "$submodule_name"
                 return_code=$?
             else
-                git submodule add -b "${b:=master}" $git_source_url
+                git submodule add --branch "${b:=master}" $git_source_url
                 return_code=$?
             fi
             git add *; git commit -m "Add a submodule"; git push
