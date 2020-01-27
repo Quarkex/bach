@@ -11,13 +11,17 @@ migrate(){(
     else
         perform_migration(){( # project, instance #
             remote_backup_folder="$(
-                ssh $target_host "$program_name" locate -b "$1" "$2"
+                ssh $target_host "$program_name" locate -b
             )"
-            local_backup_folder="$( $0 locate -b "$1" "$2")"
+            local_backup_folder="$($0 locate -b)"
+            local_instance_backup_folder="$($0 locate -b "$1" "$2")"
+            instance_backup_route="${local_instance_backup_folder##${local_backup_folder}/}"
             local_instance_folder="$( $0 locate "$1" "$2")"
 
             [ -d "$local_instance_folder" ] && $0 backup "$1" "$2"
-            rsync -r "$local_backup_folder" $target_host:"$remote_backup_folder"
+            rsync -ar --relative \
+                "${local_backup_folder}/./${instance_backup_route}" \
+                $target_host:"$remote_backup_folder"
         )}
 
         [ "$project_name" != "" ] && projects="$project_name" || projects="$($0 list)";
