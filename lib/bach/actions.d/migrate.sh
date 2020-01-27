@@ -17,7 +17,7 @@ migrate(){(
             local_instance_folder="$( $0 locate "$1" "$2")"
 
             [ -d "$local_instance_folder" ] && $0 backup "$1" "$2"
-            rsync "$local_backup_folder" $target_host:"$remote_backup_folder"
+            rsync -r "$local_backup_folder" $target_host:"$remote_backup_folder"
         )}
 
         [ "$project_name" != "" ] && projects="$project_name" || projects="$($0 list)";
