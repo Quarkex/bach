@@ -33,7 +33,12 @@ destroy(){(
         else
             (cd "$instance_folder"; docker-compose down);
             rm -rf "$instance_folder";
-            return $?
+            status=$?
+            [ $status -eq 0 ] && \
+            [ $( ls "$target_folder" | wc -l ) -eq 0 ] && \
+            rmdir "$target_folder"
+
+            return $status
         fi
     else
         return 0
