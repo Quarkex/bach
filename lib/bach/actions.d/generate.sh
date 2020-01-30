@@ -1,6 +1,6 @@
 generator_variables=""
 for template in "$sources_folder/"*/.env; do
-    template_variables="$(grep '=' "$template" | sed \
+    template_variables="$(grep '=' "$template" | egrep -v '^[\s]*#' | sed \
         -e 's/#.*$//g' \
         -e 's/=.*$/=/g' \
         -e 's/^[\s]*/--/g' \
