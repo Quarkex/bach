@@ -1,3 +1,3 @@
 [submodule "lib/clavichord"]
 	path = lib/clavichord
-	url = ssh://git@gitlab.atlantux.com:2222/jgarcia/clavichord.git
+	url = git@git.atanor.dev:quarkex/clavichord.git
