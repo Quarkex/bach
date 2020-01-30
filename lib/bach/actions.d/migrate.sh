@@ -9,6 +9,12 @@ migrate(){(
     if [ ! $? -eq 0 ]; then
         echo "ERROR: something is wrong with the host."
     else
+        ssh $target_host which rsync &>/dev/null
+        if [ ! $? -eq 0 ]; then
+            echo "ERROR: rsync is not present in the target host."
+            return -1
+        fi
+
         perform_migration(){( # project, instance #
             remote_backup_folder="$(
                 ssh $target_host "$program_name" locate -b
