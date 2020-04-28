@@ -20,7 +20,7 @@ backup_databases(){(
             docker-compose run --rm -u 0 --entrypoint /bin/bash \
                 "$project_name" -c "which \"$executable\""
             )"
-            if [ ! $executable_path == "" ]; then
+            if [ ! "$executable_path" == "" ]; then
                 backup_path="$instance_backup_folder/$executable.bak"
                 backup_file="$(date +%Y-%m-%d_%H-%M-%S).$executable.dump"
                 [ ! -d "$backup_path" ] && mkdir -p "$backup_path"
