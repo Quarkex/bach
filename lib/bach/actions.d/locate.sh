@@ -39,20 +39,11 @@ locate(){(
         target_folder="$sources_folder"
     fi
 
-    if [[ "$project_folder" == "" ]]; then
-        echo "$target_folder"
-        ls -d $@ "$target_folder" &>/dev/null
-        return $?
-    else
-        if [[ "$instance_name" == "" ]]; then
-            echo "$target_folder/$project_folder"
-            ls -d $@ "$target_folder/$project_folder" &>/dev/null
-            return $?
-        else
-            echo "$target_folder/$project_folder/$instance_name"
-            ls -d $@ "$target_folder/$project_folder/$instance_name" &>/dev/null
-            return $?
-        fi
-    fi
+    [[ ! "$project_folder" == "" ]] && target_folder="$target_folder/$project_folder"
+    [[ ! "$instance_name" == "" ]] && target_folder="$target_folder/$instance_name"
+
+    echo "$target_folder"
+    ls -d $@ "$target_folder" &>/dev/null
+    return $?
 
 )}
