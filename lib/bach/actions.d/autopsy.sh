@@ -1,4 +1,4 @@
-set_action "autopsy" "project_name instance_name"                              \
+set_action "autopsy~" "project_name instance_name"                             \
 "Run an interactive bash shell instead of entrypoint, in an alternate container." \
 "Usage:"                                                                       \
 "  %program_name% %action_name% [%project_name%] [%instance_name%]"            \

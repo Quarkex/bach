@@ -1,4 +1,4 @@
-set_action "migrate" "target_host project_name? instance_name?"                \
+set_action "migrate~" "target_host project_name? instance_name?"               \
 "Send a project to another installation via ssh"                               \
 "Usage:"                                                                       \
 "  %program_name% %action_name% %target_host% [%project_name%] [%instance_name%]" \

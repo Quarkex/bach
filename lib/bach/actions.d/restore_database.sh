@@ -1,5 +1,5 @@
 database_restore_executables=("psql")
-set_action "restore_databases" "project_name instance_name database_type? backup_date? backup_time? -f" \
+set_action "restore_databases!" "project_name instance_name database_type? backup_date? backup_time? -f" \
 "Restore backups of the databases created with “backup_databases”"             \
 "Usage:"                                                                       \
 "  %program_name% %action_name% %project_name% %instance_name% [-f] [ARGS]"    \

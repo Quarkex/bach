@@ -1,4 +1,4 @@
-set_action "cp_in" "project_name instance_name target_file instance_inner_destination?" \
+set_action "cp_in~" "project_name instance_name target_file instance_inner_destination?" \
 "Copy a file into a docker-compose already generated instance of a project"    \
 "Usage:"                                                                       \
 "  %program_name% %action_name% %project_name% %instance_name% \\\\"           \

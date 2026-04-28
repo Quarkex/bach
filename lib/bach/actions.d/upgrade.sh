@@ -1,4 +1,4 @@
-set_action "upgrade" "-i"                                                      \
+set_action "upgrade!" "-i"                                                     \
 "Update the templates folder or the image sources folder"                      \
 "Usage:"                                                                       \
 "  %program_name% %action_name% [-i]"                                          \

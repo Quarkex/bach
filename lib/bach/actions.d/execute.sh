@@ -1,4 +1,4 @@
-set_action "execute" "project_name instance_name"                              \
+set_action "execute~" "project_name instance_name"                             \
 "Use “docker-compose exec” in the service of the instance with the same name as the project" \
 "Usage:"                                                                       \
 "  %program_name% %action_name% %project_name% %instance_name% [arguments]"    \

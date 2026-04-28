@@ -1,4 +1,4 @@
-set_action "compose" "project_name instance_name"                              \
+set_action "compose~" "project_name instance_name"                             \
 "Send a docker-compose action to an already generated instance of a project"   \
 "Usage:"                                                                       \
 "  %program_name% %action_name% %project_name% %instance_name% [arguments]"    \

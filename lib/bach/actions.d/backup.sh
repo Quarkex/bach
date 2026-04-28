@@ -1,4 +1,4 @@
-set_action "backup" "project_name? instance_name?"                             \
+set_action "backup~" "project_name? instance_name?"                            \
 "Performs a backup of an instance, all instances of a project, or everything"  \
 "Usage:"                                                                       \
 "  %program_name% %action_name%"                                               \

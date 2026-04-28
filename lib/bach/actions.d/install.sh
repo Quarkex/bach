@@ -1,4 +1,4 @@
-set_action "install" "git_source_url submodule_name? -i -b="                   \
+set_action "install~" "git_source_url submodule_name? -i -b="                  \
 "Install a project template or docker image as a submodule."                   \
 "Usage:"                                                                       \
 "  %git_source_url% [%submodule_name%] [-i]"                                   \

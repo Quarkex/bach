@@ -1,4 +1,4 @@
-set_action "prune_modules" "project_name? instance_name?"                      \
+set_action "prune_modules!" "project_name? instance_name?"                     \
 "Remove all Odoo modules already present in the image from the extra addons dir." \
 "Usage:"                                                                       \
 "  %program_name% %action_name% [%project_name%] [%instance_name%]"            \

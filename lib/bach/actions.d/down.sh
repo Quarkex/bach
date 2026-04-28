@@ -1,4 +1,4 @@
-set_action "down" "project_name instance_name"                                 \
+set_action "down!" "project_name instance_name"                                \
 "Send a docker-compose ”down” action to an instance of a project."             \
 "Usage:"                                                                       \
 "  %program_name% %action_name% %project_name% %instance_name% [arguments]"    \

@@ -1,5 +1,5 @@
 database_executables=("psql")
-set_action "backup_databases" "project_name? instance_name?"                   \
+set_action "backup_databases~" "project_name? instance_name?"                  \
 "Perform a dump of active instances inside its folder."                        \
 "Usage:"                                                                       \
 "  %program_name% %action_name% [%project_name%] [%instance_name%]"            \

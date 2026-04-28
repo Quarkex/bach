@@ -1,4 +1,4 @@
-set_action "restore" "project_name instance_name backup_date? backup_time? -f" \
+set_action "restore!" "project_name instance_name backup_date? backup_time? -f" \
 "Restore a backup of an instance created with “backup”"                        \
 "Usage:"                                                                       \
 "  %program_name% %action_name% %project_name% %instance_name% [-f] [ARGS]"    \

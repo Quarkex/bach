@@ -1,4 +1,4 @@
-set_action "locate" "project_name? instance_name? -i -b -t"                    \
+set_action "locate:" "project_name? instance_name? -i -b -t"                   \
 "Return main path, project path or instance path"                              \
 "Usage:"                                                                       \
 "  %program_name% %action_name% [%project_name%] [%instance_name%]"            \

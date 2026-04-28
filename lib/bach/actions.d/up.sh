@@ -1,4 +1,4 @@
-set_action "up" "project_name instance_name"                                   \
+set_action "up!" "project_name instance_name"                                  \
 "Send a docker-compose ”up -d” action to an instance of a project."            \
 "Usage:"                                                                       \
 "  %program_name% %action_name% %project_name% %instance_name% [arguments]"    \

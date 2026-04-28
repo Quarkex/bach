@@ -1,4 +1,4 @@
-set_action "remove_data" "project_name instance_name -f"                       \
+set_action "remove_data!" "project_name instance_name -f"                      \
 "Removes the “data” folder generated inside an instance, clearing the persistency" \
 "Usage:"                                                                       \
 "  %program_name% %action_name% %project_name% %instance_name% [-f]"           \

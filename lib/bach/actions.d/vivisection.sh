@@ -1,4 +1,4 @@
-set_action "vivisection" "project_name instance_name"                          \
+set_action "vivisection~" "project_name instance_name"                         \
 "Run an interactive bash shell in a live and running container."               \
 "Usage:"                                                                       \
 "  %program_name% %action_name% [%project_name%] [%instance_name%]"            \

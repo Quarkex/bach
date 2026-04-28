@@ -1,4 +1,4 @@
-set_action "edit" "project_name instance_name"                                 \
+set_action "edit~" "project_name instance_name"                                \
 "Edit the project variables file with ${EDITOR:-nano}"                         \
 "Usage:"                                                                       \
 "  %program_name% %action_name% %project_name% %instance_name%"                \

@@ -1,4 +1,4 @@
-set_action "destroy" "project_name instance_name -f"                           \
+set_action "destroy!" "project_name instance_name -f"                          \
 "Removes an already generated instance of a project"                           \
 "Usage:"                                                                       \
 "  %program_name% %action_name% %project_name% %instance_name% [-f]"           \

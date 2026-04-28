@@ -1,4 +1,4 @@
-set_action "clear_old_backups" ""                                              \
+set_action "clear_old_backups!" ""                                             \
 "Remove files older than %days_to_backup% days from the backups folder"        \
 "Usage:"                                                                       \
 "  %program_name% %action_name%"                                               \

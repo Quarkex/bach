@@ -1,4 +1,4 @@
-set_action "logs" "project_name instance_name"                                 \
+set_action "logs:" "project_name instance_name"                                \
 "Send a docker-compose ”logs -f --tail 10” action to an instance of a project." \
 "Usage:"                                                                       \
 "  %program_name% %action_name% %project_name% %instance_name% [arguments]"    \

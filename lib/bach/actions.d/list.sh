@@ -1,4 +1,4 @@
-set_action "list" "project_name? instance_name? -i -b -d -t"                   \
+set_action "list:" "project_name? instance_name? -i -b -d -t"                  \
 "List availible projects, instances, images, backups or images"                \
 "Usage:"                                                                       \
 "  %program_name% %action_name% [-i|-b]"                                       \

@@ -14,7 +14,7 @@ generator_variables="$(
     echo "$generator_variables" | paste -s -d' ' -
 )"
 
-set_action "generate" "project_name instance_name $generator_variables"        \
+set_action "generate~" "project_name instance_name $generator_variables"       \
 "Create a new instance of a project from a template"                           \
 "Usage:"                                                                       \
 "  %program_name% %action_name% %project_name% %instance_name%"                \

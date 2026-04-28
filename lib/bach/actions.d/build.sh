@@ -1,4 +1,4 @@
-set_action "build" ""                                                          \
+set_action "build!" ""                                                         \
 "Build docker images checking image dependencies"                              \
 "Usage:"                                                                       \
 "  %program_name% %action_name%"                                               \
