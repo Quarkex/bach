@@ -33,3 +33,9 @@ action_definitions_folder="$(
         "ACTION_DEFINITIONS_FOLDER" \
         "$program_lib_dir/${program_name}/actions.d"
 )"
+
+mcp_instructions="$(
+    get_config_value \
+        "MCP_INSTRUCTIONS" \
+        "This is a ${program_name} instance running on host $(hostname) ($(hostname -I 2>/dev/null | awk '{print $1}' || echo 'unknown')). Before running destructive or mutating operations, verify that this is the correct server for your intended target."
+)"
