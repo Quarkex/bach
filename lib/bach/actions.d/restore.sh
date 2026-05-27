@@ -83,8 +83,8 @@ restore(){(
 
         return 0;
     else
-        echo "ERROR: Project $instance_name does not have backups.";
-        return -1;
+        echo "No backups exist, exiting gracefully";
+return 0;
     fi
 
 )}

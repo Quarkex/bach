@@ -74,8 +74,8 @@ list(){(
         fi
     else
         if [ ! -d "$target_folder/$project_folder" ]; then
-            echo "ERROR: Project $project_name does not have a folder for $folder_name.";
-            return -1;
+            echo "No folder for $folder_name; exiting gracefully";
+            return 0;
         else
             if [ ${d:-0} -gt 0 ]; then
                 if [ "$instance_name" == "" ]; then
